@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="urlap.js"></script>
+</head>
+<body>
+    <h1 class="text-center">Űrlap</h1>
+
+    <div class="container bg-info m-auto p-3 col-6">
+
+        <div class="mb-3 mt-3">    
+            <label for="email" class="form-label fw-bold">Email:<span class="text-danger">*</span></label>
+            <input type="email" id="email" placeholder="email" name="email">
+            <div class="valid-feedback">Helyes.</div>
+            <div class="invalid-feedback">Kérem töltse ki ezt a mezőt.</div>
+        </div>
+
+        <div class="mb-3">    
+            <label for="pwd" class="form-label fw-bold">Password:<span class="text-danger">*</span></label>
+            <input type="password" id="pwd" placeholder="password(min:8 max:256)" name="pswd">
+            <div class="valid-feedback">Helyes.</div>
+            <div class="invalid-feedback">Kérem töltse ki ezt a mezőt.</div>
+        </div>
+
+        <div class="mb-3">    
+            <label for="iranyitoszam" class="form-label fw-bold">Irányítószám:<span class="text-danger">*</span></label>
+            <input type="iranyitoszam" id="irsz" placeholder="iranyitoszam(példa: 6786)" name="irszam">
+            <div class="valid-feedback">Helyes.</div>
+            <div class="invalid-feedback">Kérem töltse ki ezt a mezőt.</div>
+        </div>
+
+        <div class="mb-3">    
+            <label for="comment" class="form-label fw-bold">Kérdés a jelszóhoz:</label>
+            <textarea type="comment" rows="4" cols="30" maxlength="100" placeholder="Válasz a kérdésre (max.100 betű)" name="kerdes"></textarea>
+        </div>
+
+        <div>
+            <button type="submit" class="btn bg-warning  fw-bold">Űrlap beküldése</button><br>
+        </div>
+
+        <p><span class="text-danger">*-gal jelölt elemek kitöltése kötelező!</span></p>
+
+        <div class="error text-danger fw-bold"></div>
+    </div>
+
+</body>
+</html>
