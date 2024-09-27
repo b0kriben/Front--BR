@@ -29,23 +29,27 @@
 
         <div class="mb-3">    
             <label for="iranyitoszam" class="form-label fw-bold">Irányítószám:<span class="text-danger">*</span></label>
-            <input type="iranyitoszam" id="irsz" placeholder="iranyitoszam(példa: 6786)" name="irszam">
+            <input type="iranyitoszam" id="irszam" placeholder="iranyitoszam(példa: 6786)" name="irszam">
             <div class="valid-feedback">Helyes.</div>
             <div class="invalid-feedback">Kérem töltse ki ezt a mezőt.</div>
         </div>
 
         <div class="mb-3">    
-            <label for="comment" class="form-label fw-bold">Kérdés a jelszóhoz:</label>
+            <label for="comment" class="form-label fw-bold">Kérdés a jelszóhoz:</label><br>
             <textarea type="comment" rows="4" cols="30" maxlength="100" placeholder="Válasz a kérdésre (max.100 betű)" name="kerdes"></textarea>
+            <p id="counter">100</p>
         </div>
 
         <div>
-            <button type="submit" class="btn bg-warning  fw-bold">Űrlap beküldése</button><br>
+            <button type="submit" class="btn bg-warning fw-bold" disabled>Űrlap beküldése</button><br>
         </div>
 
         <p><span class="text-danger">*-gal jelölt elemek kitöltése kötelező!</span></p>
 
-        <div class="error text-danger fw-bold"></div>
+        <div class="error1 text-danger fw-bold"></div>
+        <div class="error2 text-danger fw-bold"></div>
+        <div class="error3 text-danger fw-bold"></div>
+        <div class="error4 text-danger fw-bold"></div>
     </div>
 
 </body>
