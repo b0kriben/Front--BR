@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="uzemanyag.js"></script>
+    <link rel="stylesheet" href="uzemanyag.css">
+    <title>Uzemanyagár megtakarítás</title>
+</head>
+<body>
+    
+    <div class="container m-auto p-3 col-6">
+
+        <h1>Költségtérítés</h1>
+
+        <div id="div1">
+            <div>
+            <p>Üzemenyag típus</p>
+            </div>
+            <div>
+                <input type="radio" id="uzemA1"></input>
+                <label for="uzemA1" id="hoverRadius">Benzin</label>
+            </div>
+            <div>
+                <input type="radio" id="uzemA2"></input>
+                <label for="uzemA2" id="hoverRadius">Gázolaj</label>
+            </div>
+            <div>
+                <input type="radio" id="uzemA3"></input>
+                <label for="uzemA3" id="hoverRadius">Erektromos</label>
+            </div>
+            <div>
+                <input type="radio" id="uzemA4"></input>
+                <label for="uzemA4" id="hoverRadius">LPG</label>
+            </div>
+        </div>
+        <div id="div2">
+            <div>
+            <p>Amortizációs térítési díj (Ft/km)</p>
+            </div>
+            <div>
+                <input type="radio" id="terites1"></input>
+                <label for="terites1" id="hoverRadius">18</label>
+            </div>
+            <div>
+                <input type="radio" id="terites2"></input>
+                <label for="terites2" id="hoverRadius">30</label>
+            </div>
+        </div>
+        
+        <div id="ftL">
+            <input type="text" id="ft"></input>
+            <label for="ft">Ft / l</label>
+        </div><br>
+
+        <div id="texts kobcenti" name="kobcenti">
+            <select>
+                <option value="1000Ig">1000 cm3-ig</option>
+                <option value="1500">1001-1500 cm3-ig</option>
+                <option value="2000">1501-2000 cm3-ig</option>
+                <option value="3000">2001-3000 cm3-ig</option>
+                <option value="3000Felett">3001 cm3 felett</option>
+            </select>
+        </div>
+
+        <div id="texts">
+            <label for="rendszam">Rendszám:</label>
+            <input type="text" id="rendszam"></input>
+        </div>
+        <div id="texts">
+            <label for="gyartoTipus">Gyartó, típus:</label>
+            <input type="text" id="gyartoTipus"></input>
+        </div>
+        <div id="texts">
+            <label for="honnanHova">Honnan-Hova:</label>
+            <input type="text" id="honnanHova"></input>
+        </div>
+        <div id="texts">
+            <label for="megtettTav">Megtett távolság:</label>
+            <input type="text" id="megtettTav"></input>
+            <label for="megtettTav">km</label>
+        </div><br>
+
+        <div>
+            <button type="submit" class="btn fw-bold">Számolás</button><br>
+        </div><br>
+
+        <div id="eredmeny">
+            <p>Eredmények:</p>
+            <div class="eredmeny"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

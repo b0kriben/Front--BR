@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(39, 39, 255);
+    
+}
+
+h1{
+    color: rgb(161, 224, 34);
+    text-align: center;
+}
+
+p{
+    color: rgb(161, 224, 34);
+    font-weight: bolder;
+}
+
+label{
+    color: aqua;
+}
+
+#div1{
+    float: left;
+    margin: 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#div2{
+    float: left;
+    margin: 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#ftL{
+    margin-top: 180px;
+}
+
+#texts{
+    margin-top: 10px;
+}
+
+.btn{
+    background-color: rgb(255, 185, 54);
+    border: 2px black solid;
+}
+
+.btn:hover{
+    background-color: greenyellow;
+    border: 2px black solid;
+}
+
+#hoverRadius:hover{
+    font-weight: bolder;
+}
