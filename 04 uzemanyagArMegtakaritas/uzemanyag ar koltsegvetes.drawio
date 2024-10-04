@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="1 oldal" id="4B9VmVw11KldievSYFL6">
+    <mxGraphModel dx="588" dy="598" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-58" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-57" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="130" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-28" value="Benzin" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=1;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-29" value="Gázolaj" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-30" value="Elektromos" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;fontColor=default;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="220" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-31" value="LPG" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;fontColor=default;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-33" value="Költségtérítés" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-35" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-36" value="Ft / l" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="285" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-37" value="1000 cm^3" style="strokeWidth=1;html=1;shadow=0;dashed=0;shape=mxgraph.ios.iComboBox;spacingTop=2;spacingLeft=2;align=left;strokeColor=#444444;fontColor=#666666;buttonText=;fontSize=8;fillColor=#dddddd;fillColor2=#3D5565;sketch=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="350" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="400" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-39" value="Rendszám" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="400" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-41" value="Gyártó típus" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-43" value="Honnan hova" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-44" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="585" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-45" value="Megtett távolság" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="585" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-46" value="km" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-51" value="18" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=1;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="344" y="200" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-52" value="30" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="344" y="220" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-55" value="Amortizációs térítési díj (Ft/km)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="150" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-59" value="Üzemanyag típusa" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="J-Jhd0HCvcgX_uKjpFnL-61" value="Számol" style="labelPosition=center;verticalLabelPosition=middle;align=center;html=1;shape=mxgraph.basic.button;dx=10;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="260" y="660" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
