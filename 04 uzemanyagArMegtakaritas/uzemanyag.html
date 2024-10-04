@@ -21,20 +21,20 @@
                 <p>Üzemenyag típus</p>
                 </div>
                 <div class="mb-1">
-                    <input type="radio" id="uzemA1"></input>
-                    <label for="uzemA1" id="hoverRadius">Benzin</label>
+                    <input type="radio" id="benzin" name="uzemanyagInput"></input>
+                    <label for="benzin" id="hoverRadius">Benzin</label>
                 </div>
                 <div class="mb-1">
-                    <input type="radio" id="uzemA2"></input>
-                    <label for="uzemA2" id="hoverRadius">Gázolaj</label>
+                    <input type="radio" id="dizel" name="uzemanyagInput"></input>
+                    <label for="dizel" id="hoverRadius">Gázolaj</label>
                 </div>
                 <div class="mb-1">
-                    <input type="radio" id="uzemA3"></input>
-                    <label for="uzemA3" id="hoverRadius">Erektromos</label>
+                    <input type="radio" id="elektromos" name="uzemanyagInput"></input>
+                    <label for="elektromos" id="hoverRadius">Erektromos</label>
                 </div>
                 <div class="mb-1">
-                    <input type="radio" id="uzemA4"></input>
-                    <label for="uzemA4" id="hoverRadius">LPG</label>
+                    <input type="radio" id="lpg" name="uzemanyagInput"></input>
+                    <label for="lpg" id="hoverRadius">LPG</label>
                 </div>
             </div>
             <div id="div2">
@@ -43,11 +43,11 @@
                 </div>
                 <div class="mb-1">
                     <input type="radio" id="terites1"></input>
-                    <label for="terites1" id="hoverRadius">18 Ft</label>
+                    <label for="terites1" id="hoverRadius">18</label>
                 </div>
                 <div class="mb-1">
                     <input type="radio" id="terites2"></input>
-                    <label for="terites2" id="hoverRadius">30 Ft</label>
+                    <label for="terites2" id="hoverRadius">30</label>
                 </div>
             </div>
         </div>
@@ -59,12 +59,14 @@
             </div><br>
     
             <div id="texts kobcenti" name="kobcenti" class="mb-1">
-                <select>
-                    <option value="1000Ig">1000 cm3-ig</option>
+                <label for="cm3Input">Motor cm3:</label>
+                <select class="select" id="cm3Input" required>
+                    <option value="-1"></option>
+                    <!--<option value="1000Ig">1000 cm3-ig</option>
                     <option value="1500">1001-1500 cm3-ig</option>
                     <option value="2000">1501-2000 cm3-ig</option>
                     <option value="3000">2001-3000 cm3-ig</option>
-                    <option value="3000Felett">3001 cm3 felett</option>
+                    <option value="3000Felett">3001 cm3 felett</option>-->
                 </select>
             </div>
     
@@ -88,7 +90,7 @@
         </div>
 
         <div class="mb-1">
-            <button type="submit" class="btn fw-bold">Számolás</button><br>
+            <button type="submit" disabled="true" class="btn fw-bold">Számolás</button><br>
         </div><br>
 
         <div id="eredmeny" class="mb-1">
