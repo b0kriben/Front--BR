@@ -42,11 +42,11 @@
                 <p>Amortizációs térítési díj (Ft/km)</p>
                 </div>
                 <div class="mb-1">
-                    <input type="radio" id="terites1"></input>
+                    <input type="radio" id="terites1" name="teritesInput"></input>
                     <label for="terites1" id="hoverRadius">18</label>
                 </div>
                 <div class="mb-1">
-                    <input type="radio" id="terites2"></input>
+                    <input type="radio" id="terites2" name="teritesInput"></input>
                     <label for="terites2" id="hoverRadius">30</label>
                 </div>
             </div>
@@ -54,13 +54,13 @@
 
         <div id="div3">
             <div class="mb-1">
-                <input type="text" id="ft"></input>
-                <label for="ft">Ft / l</label>
+                <input type="text" id="ftL" name="ftLInput"></input>
+                <label for="ftL">Ft / l</label>
             </div><br>
     
             <div id="texts kobcenti" name="kobcenti" class="mb-1">
                 <label for="cm3Input">Motor cm3:</label>
-                <select class="select" id="cm3Input" required>
+                <select class="select" id="cm3Input" name="kobcentiSelect" required>
                     <option value="-1"></option>
                     <!--<option value="1000Ig">1000 cm3-ig</option>
                     <option value="1500">1001-1500 cm3-ig</option>
@@ -72,19 +72,19 @@
     
             <div id="texts" class="mb-1">
                 <label for="rendszam">Rendszám:</label>
-                <input type="text" id="rendszam"></input>
+                <input type="text" id="rendszam" name="rendszamInput"></input>
             </div>
             <div id="texts" class="mb-1">
                 <label for="gyartoTipus">Gyartó, típus:</label>
-                <input type="text" id="gyartoTipus"></input>
+                <input type="text" id="gyartoTipus" name="gyartoInput"></input>
             </div>
             <div id="texts" class="mb-1">
                 <label for="honnanHova">Honnan-Hova:</label>
-                <input type="text" id="honnanHova"></input>
+                <input type="text" id="honnanHova" name="honnanHovaInput"></input>
             </div>
             <div id="texts" class="mb-1">
                 <label for="megtettTav">Megtett távolság:</label>
-                <input type="text" id="megtettTav"></input>
+                <input type="text" id="megtettTav" name="megtettTavInput"></input>
                 <label for="megtettTav">km</label>
             </div><br>
         </div>
@@ -92,6 +92,8 @@
         <div class="mb-1">
             <button type="submit" disabled="true" class="btn fw-bold">Számolás</button><br>
         </div><br>
+
+        <div class="error text-danger fw-bold"></div>
 
         <div id="eredmeny" class="mb-1">
             <p>Eredmények:</p>
