@@ -45,10 +45,15 @@ $(function(){
 
     let uzemanyag;
     //let filled = [false, false, true, true, true, true, true, true]
-    let filled = [false, false, false, false, false, false, false, false]
+    let filled = [false, false, false, false, false, false, false, false];
+    let ertekek = {};
 
-    $(".container").submit(function(e){   //A kitöltött űrlap elemei nem kerülnek törlésre
+    $("form").submit(function(e){   //A kitöltött űrlap elemei nem kerülnek törlésre
         e.preventDefault();
+    })
+
+    $("[type=submit]").click(function(){
+        szamitas(ertekek);
     })
 
     $("[name=uzemanyagInput]").change(function(){
@@ -66,7 +71,8 @@ $(function(){
         }
     })
 
-    $("[name=teritesInput]").change(function(){
+    //ez is működik
+    /*$("[name=teritesInput]").change(function(){
         filled[1] = true;
     })
 
@@ -92,22 +98,50 @@ $(function(){
 
     $("[name=megtettTavInput]").change(function(){
         filled[7] = true;
-    })
+    })*/
+
 
     $("input, select").change(function(){
+        let element = $(this);
+
+        ertekek[$(this).attr("name")] = $(this).val();
+        console.table(ertekek);
+
+        switch(element.attr("name")){
+            case "uzemanyagInput" : 
+                filled[0] = true; 
+                break;
+            case "teritesInput" : 
+                filled[1] = true; 
+                break;
+            case "ftLInput" : 
+                filled[2] = true; 
+                break;
+            case "kobcentiSelect" : 
+                filled[3] = true; 
+                break;
+            case "rendszamInput" : 
+                filled[4] = true; 
+                break;
+            case "gyartoInput" : 
+                filled[5] = true; 
+                break;
+            case "honnanHovaInput" : 
+                filled[6] = true; 
+                break;
+            case "megtettTavInput" : 
+                filled[7] = true; 
+                break;
+        }
+
         if(!filled.includes(false)){
             $("[type=submit]").attr("disabled", false);
         }
-        /*switch(name){
-            case 0: name = "uzemanyagInput"; break;
-            case 1: name = "teritesInput"; break;
-            case 2: name = "ftLInput"; break;
-            case 3: name = "kobcentiSelect"; break;
-            case 4: name = "rendszamInput"; break;
-            case 5: name = "gyartoInput"; break;
-            case 6: name = "honnanHovaInput"; break;
-            case 7: name = "megtettTavInput"; break;
-            default: name = "Üres.";
+        
+    //ez is működik
+    /*$("input, select").change(function(){
+        if(!filled.includes(false)){
+            $("[type=submit]").attr("disabled", false);
         }*/
     })
 
@@ -121,7 +155,7 @@ $(function(){
             $(".error").html("");
         }
     })*/
-})
+})  //ready vége
 
 function getUzemanyag(t){
     t.forEach((o)=>{
@@ -129,8 +163,20 @@ function getUzemanyag(t){
     })
 }
 
-function isFilled(){
-
+function szamitas(ertekek){
+    //for(const key in ertekek){
+        //if(Object.hasOwnProperty.call(ertekek, key)){
+            //const element = ertekek[key];
+            let fogy = 0;
+            if(key == "uzemanyagInput"){
+                switch (ertekek[key].toLowerCase()){
+                    case "elektromos": fogy = 3; break;
+                    case "lpg": fogy = ertekek["cm3Input"] * 1.2; break;
+                    default: fogy = ertekek["cm3Input"];
+                }
+            }
+            let koltseg = fogy * megtettTav / 100 * ertekek["ftLInput"] + megtettTav * teritesInput;
+            $(".koltseg").html(`<p>${koltseg}</p>`)
+        //}
+    //}
 }
-
-

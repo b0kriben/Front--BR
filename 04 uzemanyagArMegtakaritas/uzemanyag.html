@@ -13,92 +13,92 @@
     
     <div class="container m-auto p-3 col-6">
 
-        <h1>Költségtérítés</h1>
+        <form>
 
-        <div id="div1_2">
-            <div id="div1">
-                <div>
-                <p>Üzemenyag típus</p>
+            <h1>Költségtérítés</h1>
+
+            <div id="div1_2">
+                <div id="div1">
+                    <div>
+                    <p>Üzemenyag típus</p>
+                    </div>
+                    <div class="mb-1">
+                        <input type="radio" id="benzin" name="uzemanyagInput" value="benzin"></input>
+                        <label for="benzin" id="hoverRadius">Benzin</label>
+                    </div>
+                    <div class="mb-1">
+                        <input type="radio" id="dizel" name="uzemanyagInput" value="dizel"></input>
+                        <label for="dizel" id="hoverRadius">Gázolaj</label>
+                    </div>
+                    <div class="mb-1">
+                        <input type="radio" id="elektromos" name="uzemanyagInput" value="elektromos"></input>
+                        <label for="elektromos" id="hoverRadius">Erektromos</label>
+                    </div>
+                    <div class="mb-1">
+                        <input type="radio" id="lpg" name="uzemanyagInput" value="lpg"></input>
+                        <label for="lpg" id="hoverRadius">LPG</label>
+                    </div>
                 </div>
-                <div class="mb-1">
-                    <input type="radio" id="benzin" name="uzemanyagInput"></input>
-                    <label for="benzin" id="hoverRadius">Benzin</label>
-                </div>
-                <div class="mb-1">
-                    <input type="radio" id="dizel" name="uzemanyagInput"></input>
-                    <label for="dizel" id="hoverRadius">Gázolaj</label>
-                </div>
-                <div class="mb-1">
-                    <input type="radio" id="elektromos" name="uzemanyagInput"></input>
-                    <label for="elektromos" id="hoverRadius">Erektromos</label>
-                </div>
-                <div class="mb-1">
-                    <input type="radio" id="lpg" name="uzemanyagInput"></input>
-                    <label for="lpg" id="hoverRadius">LPG</label>
+                <div id="div2">
+                    <div>
+                    <p>Amortizációs térítési díj (Ft/km)</p>
+                    </div>
+                    <div class="mb-1">
+                        <input type="radio" id="terites1" name="teritesInput"></input>
+                        <label for="terites1" id="hoverRadius">18</label>
+                    </div>
+                    <div class="mb-1">
+                        <input type="radio" id="terites2" name="teritesInput"></input>
+                        <label for="terites2" id="hoverRadius">30</label>
+                    </div>
                 </div>
             </div>
-            <div id="div2">
-                <div>
-                <p>Amortizációs térítési díj (Ft/km)</p>
-                </div>
-                <div class="mb-1">
-                    <input type="radio" id="terites1" name="teritesInput"></input>
-                    <label for="terites1" id="hoverRadius">18</label>
-                </div>
-                <div class="mb-1">
-                    <input type="radio" id="terites2" name="teritesInput"></input>
-                    <label for="terites2" id="hoverRadius">30</label>
-                </div>
-            </div>
-        </div>
 
-        <div id="div3">
+            <div id="div3">
+                <div class="mb-1">
+                    <p class="text-danger text-center">Elektromos és LPG meghajtás esetén a benzin árát add meg!</p>
+                    <input type="text" id="ftL" name="ftLInput"></input>
+                    <label for="ftL">Ft / l</label>
+                </div><br>
+        
+                <div id="texts kobcenti" name="kobcenti" class="mb-1">
+                    <label for="cm3Input">Motor cm3:</label>
+                    <select class="select" id="cm3Input" name="kobcentiSelect" required>
+                        <option value="-1"></option>
+                        <!--<option value="1000Ig">1000 cm3-ig</option>
+                        <option value="1500">1001-1500 cm3-ig</option>
+                        <option value="2000">1501-2000 cm3-ig</option>
+                        <option value="3000">2001-3000 cm3-ig</option>
+                        <option value="3000Felett">3001 cm3 felett</option>-->
+                    </select>
+                </div>
+        
+                <div id="texts" class="mb-1">
+                    <label for="rendszam">Rendszám:</label>
+                    <input type="text" id="rendszam" name="rendszamInput"></input>
+                </div>
+                <div id="texts" class="mb-1">
+                    <label for="gyartoTipus">Gyartó, típus:</label>
+                    <input type="text" id="gyartoTipus" name="gyartoInput"></input>
+                </div>
+                <div id="texts" class="mb-1">
+                    <label for="honnanHova">Honnan-Hova:</label>
+                    <input type="text" id="honnanHova" name="honnanHovaInput"></input>
+                </div>
+                <div id="texts" class="mb-1">
+                    <label for="megtettTav">Megtett távolság:</label>
+                    <input type="text" id="megtettTav" name="megtettTavInput"></input>
+                    <label for="megtettTav">km</label>
+                </div><br>
+            </div>
+
             <div class="mb-1">
-                <input type="text" id="ftL" name="ftLInput"></input>
-                <label for="ftL">Ft / l</label>
+                <button type="submit" disabled="true" class="btn fw-bold">Számolás</button><br>
             </div><br>
-    
-            <div id="texts kobcenti" name="kobcenti" class="mb-1">
-                <label for="cm3Input">Motor cm3:</label>
-                <select class="select" id="cm3Input" name="kobcentiSelect" required>
-                    <option value="-1"></option>
-                    <!--<option value="1000Ig">1000 cm3-ig</option>
-                    <option value="1500">1001-1500 cm3-ig</option>
-                    <option value="2000">1501-2000 cm3-ig</option>
-                    <option value="3000">2001-3000 cm3-ig</option>
-                    <option value="3000Felett">3001 cm3 felett</option>-->
-                </select>
-            </div>
-    
-            <div id="texts" class="mb-1">
-                <label for="rendszam">Rendszám:</label>
-                <input type="text" id="rendszam" name="rendszamInput"></input>
-            </div>
-            <div id="texts" class="mb-1">
-                <label for="gyartoTipus">Gyartó, típus:</label>
-                <input type="text" id="gyartoTipus" name="gyartoInput"></input>
-            </div>
-            <div id="texts" class="mb-1">
-                <label for="honnanHova">Honnan-Hova:</label>
-                <input type="text" id="honnanHova" name="honnanHovaInput"></input>
-            </div>
-            <div id="texts" class="mb-1">
-                <label for="megtettTav">Megtett távolság:</label>
-                <input type="text" id="megtettTav" name="megtettTavInput"></input>
-                <label for="megtettTav">km</label>
-            </div><br>
-        </div>
 
-        <div class="mb-1">
-            <button type="submit" disabled="true" class="btn fw-bold">Számolás</button><br>
-        </div><br>
+            <div class="koltseg text-danger fw-bold"></div>
 
-        <div class="error text-danger fw-bold"></div>
-
-        <div id="eredmeny" class="mb-1">
-            <p>Eredmények:</p>
-            <div class="eredmeny"></div>
-        </div>
+        </form>
 
     </div>
 
