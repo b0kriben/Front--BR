@@ -70,8 +70,13 @@ $(function(){
         .done(function(d){
             console.table(d);
         })
+        .fail(function(){})
+        .always(function(){
+            console.log("Kész");
+        })
     })
 
+//#region módosít
     $(document).on('click', '#modosit', function(){
         $.ajax({
             url : url + 'posts/1',
@@ -87,7 +92,24 @@ $(function(){
             console.log("Kész");
         })
     })
+//#endregion módosít
+    $("#torol").click(function(){
+        $.ajax({
+            url : url + 'posts/1',
+            method : 'DELETE'
+        })
+            .done(function(d){
+                console.log("Törölve");
+            })
+            .fail(function(){
+                console.log("Törölve");
+            })
+            .always(function(){
+                console.log("Törölve");
+            })
+    })
 
+    //sajat
     $(document).on('click', '#torol', function(){
         $.ajax({
             url : url + 'posts/1',
